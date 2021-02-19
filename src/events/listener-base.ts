@@ -6,7 +6,7 @@ interface Event{
 	data: any
 }
 
-export default abstract class Listener<T extends Event>{
+abstract class Listener<T extends Event>{
 
 	abstract subject: T["subject"];
 	abstract queueGroupName: string;
@@ -55,5 +55,6 @@ export default abstract class Listener<T extends Event>{
 			console.error(err)
 		}
 	}
-
 }
+
+export {Listener}
