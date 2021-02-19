@@ -22,10 +22,9 @@ export function currentUser(req: Request, res: Response, next: NextFunction){
 		return next();
 	}
 
-	try{
-		const userPayload = (jwt.verify(req.session.jwt, process.env.JWT_KEY!)) as UserPayload
-		req.currentUser = userPayload
-	} catch(err){}
+	
+	const userPayload = (jwt.verify(req.session.jwt, process.env.JWT_KEY!)) as UserPayload
+	req.currentUser = userPayload
 	
 	next()
 }
