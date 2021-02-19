@@ -9,4 +9,11 @@ export * from "./middlewares/error-handler";
 export * from "./middlewares/validate-request";
 export * from "./middlewares/require-auth";
 
+export * from "./events/listener-base";
+export * from "./events/publisher-base";
+export * from "./events/subjects";
+export * from "./events/product-created-event";
+export * from "./events/product-deleted-event";
+export * from "./events/product-updated-event";
+
 export * from "./prototypes";
