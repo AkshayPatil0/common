@@ -21,10 +21,8 @@ export function currentUser(req: Request, res: Response, next: NextFunction){
 	if (!req.session?.jwt){
 		return next();
 	}
-	console.log(req.session.jwt)
 
 	const userPayload = (jwt.verify(req.session.jwt, process.env.JWT_KEY!)) as UserPayload
-	console.log(userPayload)
 	req.currentUser = userPayload
 	
 	next()
