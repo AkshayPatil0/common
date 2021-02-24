@@ -13,8 +13,12 @@ export * from "./middlewares/auth-role";
 export * from "./events/listener-base";
 export * from "./events/publisher-base";
 export * from "./events/subjects";
-export * from "./events/product-created-event";
-export * from "./events/product-deleted-event";
-export * from "./events/product-updated-event";
+
+export * from "./events/product/product-created-event";
+export * from "./events/product/product-deleted-event";
+export * from "./events/product/product-updated-event";
+
+export * from "./events/order/order-created-event";
+export * from "./events/order/order-cancelled-event";
 
 export * from "./prototypes";
