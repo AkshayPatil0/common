@@ -5,6 +5,7 @@ export enum UserRoles{
 }
 
 export enum OrderStatus{
+	cart= "cart",
 	created= "created",
 	awaitingPayment = "awaiting-payment",
 	paid = "paid",

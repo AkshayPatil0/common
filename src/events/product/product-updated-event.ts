@@ -6,6 +6,8 @@ export interface ProductUpdatedEvent{
 		id: string,
 		title: string,
 		price: number,
-		vendor: any
+		vendor: any,
+		stock: number,
+		version: number
 	}
 }
