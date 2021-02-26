@@ -12,3 +12,6 @@ export enum OrderStatus{
 	cancelled = "cancelled",
 	completed = "completed"
 }
+
+export enum ShippingStatus{
+}
