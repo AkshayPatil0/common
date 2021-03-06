@@ -11,6 +11,7 @@ export * from "./middlewares/validate-request";
 export * from "./middlewares/require-auth";
 export * from "./middlewares/auth-role";
 
+export * from "./services/aws";
 export * from "./events/listener-base";
 export * from "./events/publisher-base";
 export * from "./events/subjects";
