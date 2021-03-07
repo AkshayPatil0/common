@@ -14,6 +14,10 @@ export const uploadToAWS = (key: string, body: Buffer) => {
         console.error("Image uploading failed");
         reject(err);
       }
+      if (!data) {
+        console.error("Image uploading failed");
+        reject();
+      }
       resolve(data.Location);
     });
   });
